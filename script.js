@@ -1,6 +1,6 @@
 var p1=0;
 var p2=0;
-p2mane = prompt('Enter your name');
+p2name = prompt('Enter your name');
 
 document.querySelector(".b1").innerHTML = "Start";
 function game(){
