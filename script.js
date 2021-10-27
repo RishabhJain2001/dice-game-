@@ -1,7 +1,7 @@
 var p1=0;
 var p2=0;
 p2name = prompt('Enter your name');
-
+document.querySelector(".score")[1].innerHTML = p2name + " : ";
 document.querySelector(".b1").innerHTML = "Start";
 function game(){
 
