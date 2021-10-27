@@ -1,5 +1,6 @@
 var p1=0;
 var p2=0;
+p2mane = prompt('Enter your name');
 
 document.querySelector(".b1").innerHTML = "Start";
 function game(){
@@ -42,7 +43,7 @@ document.querySelector(".b2").addEventListener("click",function(){
     }
     else if(p2>p1)
     {
-        document.querySelector("h1").innerHTML = "Arihant Wins";
+        document.querySelector("h1").innerHTML = p2name + " Wins";
 
     }
     else{
