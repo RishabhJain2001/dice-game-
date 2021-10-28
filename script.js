@@ -1,7 +1,7 @@
 var p1=0;
 var p2=0;
 p2name = prompt('Enter your name');
-document.querySelector(".score")[1].innerHTML = p2name + " : ";
+
 document.querySelector(".b1").innerHTML = "Start";
 function game(){
 
@@ -17,8 +17,7 @@ function game(){
     else{
         p1++;
     }
-    document.querySelector(".p1").innerHTML = p1;
-    document.querySelector(".p2").innerHTML = p2;
+
     document.querySelector(".b1").innerHTML = "Next";
 }
 
@@ -36,7 +35,9 @@ document.querySelector(".b2").addEventListener("click",function(){
     document.querySelector(".img2").hidden = true;
     document.querySelector(".b2").hidden=true;
     document.getElementsByClassName("score")[0].style.visibility = "visible";
+    document.getElementsByClassName("score")[0].innerHTML = "Rishabh : " + p1 ; 
     document.getElementsByClassName("score")[1].style.visibility = "visible";
+    document.getElementsByClassName("score")[1].innerHTML = p2name + " : " + p2;
     if(p1 > p2){
         document.querySelector("h1").innerHTML = "Rishabh wins";
 
